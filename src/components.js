@@ -43,6 +43,36 @@ export default function(editor, opt = {}) {
     label: c.labelTraitRequired,
   };
 
+  const modelTrait = {
+    type: 'text',
+    name: 'ng-model',
+    label: 'Attribute',
+  };
+
+  const ifTrait = {
+    type: 'text',
+    name: 'ng-if',
+    label: 'if',
+  };
+
+  const classTrait = {
+    type: 'text',
+    name: 'ng-class',
+    label: 'class logic',
+  };
+
+  const diabledTrait = {
+    type: 'text',
+    name: 'ng-disabled',
+    label: 'disabled',
+  };
+
+  const initTrait = {
+    type: 'text',
+    name: 'ng-init',
+    label: 'set',
+  };
+
   const checkedTrait = {
     label: c.labelTraitChecked,
     type: 'checkbox',
@@ -78,17 +108,7 @@ export default function(editor, opt = {}) {
         },{
           label: c.labelTraitAction,
           name: 'action',
-        }/*,{
-          type: 'select',
-          label: c.labelTraitState,
-          name: 'formState',
-          changeProp: 1,
-          options: [
-            {value: '', name: c.labelStateNormal},
-            {value: 'success', name: c.labelStateSuccess},
-            {value: 'error', name: c.labelStateError},
-          ]
-        }*/],
+        }],
       }),
 
       init() {
@@ -202,7 +222,13 @@ export default function(editor, opt = {}) {
               {value: 'password', name: c.labelTypePassword},
               {value: 'number', name: c.labelTypeNumber},
             ]
-          }, requiredTrait
+          },
+          requiredTrait,
+          modelTrait,
+          ifTrait,
+          classTrait,
+          diabledTrait,
+          initTrait,
         ],
       }),
     }, {
@@ -231,7 +257,12 @@ export default function(editor, opt = {}) {
         traits: [
           nameTrait,
           placeholderTrait,
-          requiredTrait
+          requiredTrait,
+          modelTrait,
+          ifTrait,
+          classTrait,
+          diabledTrait,
+          initTrait,
         ]
       }),
     }, {
@@ -259,7 +290,12 @@ export default function(editor, opt = {}) {
             label: c.labelTraitOptions,
             type: 'select-options'
           },
-          requiredTrait
+          requiredTrait,
+          modelTrait,
+          ifTrait,
+          classTrait,
+          diabledTrait,
+          initTrait,
         ],
       }),
     }, {
@@ -288,7 +324,12 @@ export default function(editor, opt = {}) {
           nameTrait,
           valueTrait,
           requiredTrait,
-          checkedTrait
+          checkedTrait,
+          modelTrait,
+          ifTrait,
+          classTrait,
+          diabledTrait,
+          initTrait,
         ],
       }),
 
@@ -375,7 +416,13 @@ export default function(editor, opt = {}) {
             {value: 'reset', name: c.labelTypeReset},
             {value: 'button', name: c.labelTypeButton},
           ]
-        }]
+        },
+          modelTrait,
+          ifTrait,
+          classTrait,
+          diabledTrait,
+          initTrait,
+        ]
       }),
     }, {
       isComponent(el) {
