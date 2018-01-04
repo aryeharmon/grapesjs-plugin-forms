@@ -66,6 +66,11 @@ export default function(editor, opt = {}) {
     name: 'ng-disabled',
     label: 'disabled',
   };
+  const clickTrait = {
+    type: 'text',
+    name: 'ng-click',
+    label: 'click logic',
+  };
 
   const initTrait = {
     type: 'text',
@@ -228,6 +233,7 @@ export default function(editor, opt = {}) {
           ifTrait,
           classTrait,
           diabledTrait,
+          clickTrait,
           initTrait,
         ],
       }),
@@ -262,6 +268,7 @@ export default function(editor, opt = {}) {
           ifTrait,
           classTrait,
           diabledTrait,
+          clickTrait,
           initTrait,
         ]
       }),
@@ -295,6 +302,7 @@ export default function(editor, opt = {}) {
           ifTrait,
           classTrait,
           diabledTrait,
+          clickTrait,
           initTrait,
         ],
       }),
@@ -329,6 +337,7 @@ export default function(editor, opt = {}) {
           ifTrait,
           classTrait,
           diabledTrait,
+          clickTrait,
           initTrait,
         ],
       }),
@@ -421,6 +430,7 @@ export default function(editor, opt = {}) {
           ifTrait,
           classTrait,
           diabledTrait,
+          clickTrait,
           initTrait,
         ]
       }),
