@@ -49,6 +49,14 @@ export default function(editor, opt = {}) {
     label: 'Attribute',
   };
 
+  const acceptTrait = {
+    type: 'text',
+    name: 'accept',
+    label: 'accept',
+    placeholder: '.jpg, .png, .doc',
+  };
+
+
   const ifTrait = {
     type: 'text',
     name: 'ng-if',
@@ -82,6 +90,21 @@ export default function(editor, opt = {}) {
     label: c.labelTraitChecked,
     type: 'checkbox',
     name: 'checked',
+    changeProp: 1
+  };
+
+  const multipleTrait = {
+    label: 'multiple(file)',
+    type: 'checkbox',
+    name: 'multiple',
+    value: 'multiple',
+    changeProp: 1
+  };
+
+  const maxTrait = {
+    label: 'max(file)',
+    type: 'number',
+    name: 'data-max',
     changeProp: 1
   };
 
@@ -226,7 +249,7 @@ export default function(editor, opt = {}) {
               {value: 'email', name: c.labelTypeEmail},
               {value: 'password', name: c.labelTypePassword},
               {value: 'number', name: c.labelTypeNumber},
-              {value: 'file', name: c.labelTypeNumber},
+              {value: 'file', name: 'File'},
             ]
           },
           requiredTrait,
@@ -236,6 +259,9 @@ export default function(editor, opt = {}) {
           diabledTrait,
           clickTrait,
           initTrait,
+          acceptTrait,
+          multipleTrait,
+          maxTrait,
         ],
       }),
     }, {
