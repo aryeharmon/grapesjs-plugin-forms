@@ -226,6 +226,7 @@ export default function(editor, opt = {}) {
               {value: 'email', name: c.labelTypeEmail},
               {value: 'password', name: c.labelTypePassword},
               {value: 'number', name: c.labelTypeNumber},
+              {value: 'file', name: c.labelTypeNumber},
             ]
           },
           requiredTrait,
