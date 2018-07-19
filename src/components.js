@@ -136,6 +136,16 @@ export default function(editor, opt = {}) {
         },{
           label: c.labelTraitAction,
           name: 'action',
+        }, {
+          type: 'select',
+          label: 'Authentication Action',
+          name: 'data-authentication_action',
+          options: [
+            {value: '', name: 'none'},
+            {value: '', name: 'login'},
+            {value: '', name: 'trade'},
+            {value: '', name: 'withdraw'},
+          ]
         }],
       }),
 
