@@ -142,9 +142,9 @@ export default function(editor, opt = {}) {
           name: 'data-authentication_action',
           options: [
             {value: '', name: 'none'},
-            {value: '', name: 'login'},
-            {value: '', name: 'trade'},
-            {value: '', name: 'withdraw'},
+            {value: 'login', name: 'login'},
+            {value: 'trade', name: 'trade'},
+            {value: 'withdraw', name: 'withdraw'},
           ]
         }],
       }),
