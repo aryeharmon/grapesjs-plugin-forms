@@ -260,6 +260,8 @@ export default function(editor, opt = {}) {
               {value: 'password', name: c.labelTypePassword},
               {value: 'number', name: c.labelTypeNumber},
               {value: 'file', name: 'File'},
+	      {value: 'date', name: 'Date'},
+	      {value: 'datetime', name: 'Date Time'},
             ]
           },
           requiredTrait,
