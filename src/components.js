@@ -38,9 +38,13 @@ export default function(editor, opt = {}) {
   };
 
   const requiredTrait = {
-    type: 'checkbox',
+    type: 'select',
     name: 'required',
     label: c.labelTraitRequired,
+    options: [
+      {value: '', name: 'Not Required'},
+      {value: 'required', name: 'Required'},
+    ],
   };
 
   const modelTrait = {
