@@ -146,9 +146,15 @@ export default function(editor, opt = {}) {
           name: 'data-authentication_action',
           options: [
             {value: '', name: 'none'},
-            {value: 'login', name: 'login'},
-            {value: 'trade', name: 'trade'},
-            {value: 'withdraw', name: 'withdraw'},
+            {value: 'Login', name: 'Login'},
+            {value: 'Balance', name: 'Balance'},
+            {value: 'Withdraw', name: 'Withdraw'},
+            {value: 'Pay', name: 'Pay'},
+            {value: 'Transfer', name: 'Transfer'},
+            {value: 'Trading', name: 'Trading'},
+            {value: 'Convert', name: 'Convert'},
+            {value: 'Beneficiary', name: 'Beneficiary'},
+            {value: 'Security', name: 'Security'},
           ]
         }],
       }),
