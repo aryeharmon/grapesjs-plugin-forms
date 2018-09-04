@@ -67,6 +67,13 @@ export default function(editor, opt = {}) {
     label: 'if',
   };
 
+  const showTrait = {
+    type: 'text',
+    name: 'ng-show',
+    label: 'show',
+  };
+
+
   const classTrait = {
     type: 'text',
     name: 'ng-class',
@@ -277,6 +284,7 @@ export default function(editor, opt = {}) {
           requiredTrait,
           modelTrait,
           ifTrait,
+	  showTrait,
           classTrait,
           diabledTrait,
           clickTrait,
@@ -315,6 +323,7 @@ export default function(editor, opt = {}) {
           requiredTrait,
           modelTrait,
           ifTrait,
+          showTrait,
           classTrait,
           diabledTrait,
           clickTrait,
@@ -349,6 +358,7 @@ export default function(editor, opt = {}) {
           requiredTrait,
           modelTrait,
           ifTrait,
+          showTrait,
           classTrait,
           diabledTrait,
           clickTrait,
@@ -384,6 +394,7 @@ export default function(editor, opt = {}) {
           checkedTrait,
           modelTrait,
           ifTrait,
+          showTrait,
           classTrait,
           diabledTrait,
           clickTrait,
@@ -477,6 +488,7 @@ export default function(editor, opt = {}) {
         },
           modelTrait,
           ifTrait,
+          showTrait,
           classTrait,
           diabledTrait,
           clickTrait,
