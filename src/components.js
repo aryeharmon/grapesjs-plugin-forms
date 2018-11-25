@@ -47,6 +47,17 @@ export default function(editor, opt = {}) {
     ],
   };
 
+  const modelSelectTrait = {
+    type: 'select',
+    name: 'model',
+    label: 'ilya',
+    options: [
+      {value: '', name: 'Not Required'},
+      {value: 'required', name: 'Required'},
+    ],
+  };
+
+
   const modelTrait = {
     type: 'text',
     name: 'ng-model',
@@ -163,7 +174,9 @@ export default function(editor, opt = {}) {
             {value: 'Beneficiary', name: 'Beneficiary'},
             {value: 'Security', name: 'Security'},
           ]
-        }],
+        },
+        modelSelectTrait
+      ],
       }),
 
       init() {
