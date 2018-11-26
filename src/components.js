@@ -50,11 +50,10 @@ export default function(editor, opt = {}) {
   const modelSelectTrait = {
     type: 'select',
     name: 'model',
-    label: 'ilya',
-    options: [
-      {value: '', name: 'Not Required'},
-      {value: 'required', name: 'Required'},
-    ],
+    label: c.labelTraitModel,
+    options: window.models.map(function(value){
+      return {value: value, name: value};
+    }),
   };
 
 
