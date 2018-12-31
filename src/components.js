@@ -62,8 +62,8 @@ export default function(editor, opt = {}) {
     label: c.labelTraitValid,
     options: [
       {value: 'none', name: 'none'},
-      {value: 'touche', name: 'touche'},
-      {value: 'dirty', name: 'dirty'},
+      {value: '$touched', name: 'touche'},
+      {value: '$dirty', name: 'dirty'},
     ],
   };
 
