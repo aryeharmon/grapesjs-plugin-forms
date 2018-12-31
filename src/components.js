@@ -56,6 +56,16 @@ export default function(editor, opt = {}) {
     }),
   };
 
+  const validDataTrait = {
+    type: 'select',
+    name: 'valid_data',
+    label: c.labelTraitValid,
+    options: [
+      {value: 'touche', name: 'touche'},
+      {value: 'dirty', name: 'dirty'},
+    ],
+  };
+
 
   const modelTrait = {
     type: 'text',
@@ -174,7 +184,8 @@ export default function(editor, opt = {}) {
             {value: 'Security', name: 'Security'},
           ]
         },
-        modelSelectTrait
+        modelSelectTrait,
+        validDataTrait
       ],
       }),
 
@@ -289,14 +300,14 @@ export default function(editor, opt = {}) {
               {value: 'password', name: c.labelTypePassword},
               {value: 'number', name: c.labelTypeNumber},
               {value: 'file', name: 'File'},
-	      {value: 'date', name: 'Date'},
-	      {value: 'datetime', name: 'Date Time'},
+      	      {value: 'date', name: 'Date'},
+      	      {value: 'datetime', name: 'Date Time'},
             ]
           },
           requiredTrait,
           modelTrait,
           ifTrait,
-	  showTrait,
+	        showTrait,
           classTrait,
           diabledTrait,
           clickTrait,

@@ -24,6 +24,7 @@ export default grapesjs.plugins.add('gjs-plugin-forms', (editor, opts) => {
     labelTraitValue: 'Value',
     labelTraitRequired: 'Required',
     labelTraitModel: 'Models',
+    labelTraitValid: 'Data Valid',
     labelTraitType: 'Type',
     labelTraitOptions: 'Options',
     labelTraitChecked: 'Checked',
